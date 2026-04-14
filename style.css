@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, pink, lightblue);
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #ff69b4;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background: orange;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: gold;
+}
+
+#products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.hidden {
+  display: none;
+}
