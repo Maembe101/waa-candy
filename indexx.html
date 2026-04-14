@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>W@A Candy Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍭 W@A Candy Shop 🍬</h1>
+  <div id="user-info">
+    <span id="username">Guest</span> | Credits: <span id="credits">0</span>
+  </div>
+</header>
+
+<nav>
+  <button onclick="showSection('shop')">Shop</button>
+  <button onclick="showSection('account')">Account</button>
+  <button onclick="showSection('admin')">Admin</button>
+</nav>
+
+<main>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <h2>Our Candies</h2>
+    <div id="products"></div>
+    <h3>Cart: <span id="cart-count">0</span> items</h3>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- ACCOUNT -->
+  <section id="account" class="hidden">
+    <h2>Account</h2>
+    <input id="nameInput" placeholder="Enter username">
+    <button onclick="login()">Login</button>
+    <p>Your Credits: <span id="accountCredits">0</span></p>
+  </section>
+
+  <!-- ADMIN -->
+  <section id="admin" class="hidden">
+    <h2>Admin Panel (Owner Control)</h2>
+    
+    <input id="newCandy" placeholder="Candy name">
+    <input id="newPrice" type="number" placeholder="Price">
+    <button onclick="addCandy()">Add Candy</button>
+
+    <h3>Change Background</h3>
+    <input type="color" onchange="changeBackground(this.value)">
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
